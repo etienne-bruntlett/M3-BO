@@ -1,0 +1,144 @@
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    width: 100%;
+    height: 65px;
+    background-color: rgba(120, 32, 110, 0.9);
+}
+
+.cta{
+    width: 100%;
+    position: relative;
+    color: #fff;
+    background-color: rgba(218, 117, 42, 0.9);
+}
+
+.cta-img{
+    width: 100%;
+    height: 800px;
+}
+
+.cta-div {
+    position: absolute;
+    bottom:50%;
+    right: 50%;
+    transform: translate(50%, 50%);
+    background-color: rgba(218, 117, 42, 0.9);
+    padding: 16px;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 16px;
+    align-items: center;
+}
+
+.cta-button{
+    padding: 4px;
+}
+.header {
+    border-bottom: 3px rgba(218, 117, 42, 0.9) solid;
+    border-radius: 10px;
+    text-align: center;
+    font-size: 2rem;
+    padding: 5px;
+    background-color: rgba(120, 32, 110, 0.9);
+}
+
+.products {
+    display: flex;
+    gap: 10px;
+    background-color: rgba(120, 32, 110, 0.9);
+}
+
+.product {
+    width: 820px;
+    height: 320px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px;
+}
+.product:hover {
+    background-color: rgba(194, 65, 179, 0.9);
+    border: 5px solid rgba(74, 22, 68, 0.6);
+    border-radius: 10px;
+    cursor: pointer;
+}
+.product-img {
+    width: 160px;
+    object-fit: cover;
+}
+
+.producten {
+    background-color: rgba(120, 32, 110, 0.9);
+    color: #fff;
+}
+
+footer {
+    width: 100%;
+    height: 30px;
+    background-color: rgba(96, 25, 88, 0.9);
+    text-align: center;
+    padding: 20px;
+    border-top: 3px solid rgba(77, 21, 70, 0.9);
+}
+
+.btn-11 {
+  border: none;
+  background: rgb(251,33,117);
+    background: linear-gradient(0deg, rgba(251,33,117,1) 0%, rgba(234,76,137,1) 100%);
+    color: #fff;
+    overflow: hidden;
+}
+
+.btn-11:hover {
+    text-decoration: none;
+    color: #fff;
+}
+
+.btn-11:before {
+    position: absolute;
+    content: '';
+    display: inline-block;
+    top: -180px;
+    left: 0;
+    width: 30px;
+    height: 100%;
+    background-color: #fff;
+    animation: shiny-btn1 3s ease-in-out infinite;
+}
+
+.btn-11:hover{
+  opacity: .7;
+}
+
+.btn-11:active{
+  box-shadow:  4px 4px 6px 0 rgba(255,255,255,.3),
+              -4px -4px 6px 0 rgba(116, 125, 136, .2), 
+    inset -4px -4px 6px 0 rgba(255,255,255,.2),
+    inset 4px 4px 6px 0 rgba(0, 0, 0, .2);
+}
+
+.custom-btn {
+  width: 130px;
+  height: 40px;
+  color: #fff;
+  border-radius: 5px;
+  padding: 10px 25px;
+  font-family: 'Lato', sans-serif;
+  font-weight: 500;
+  background: transparent;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  position: relative;
+  display: inline-block;
+   box-shadow:inset 2px 2px 2px 0px rgba(255,255,255,.5),
+   7px 7px 20px 0px rgba(0,0,0,.1),
+   4px 4px 5px 0px rgba(0,0,0,.1);
+  outline: none;
+}
