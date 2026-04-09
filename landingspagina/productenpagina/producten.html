@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MangaShop Products</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+
+<body>
+
+    <header>
+        <div class="header-inner">
+            <a class="brand" href="https://40747.hosts2.ma-cloud.nl/landingspagina/index.html">
+                <img class="logo" src="img/logo.jpg" alt="MangaShop Logo">
+                <span>MangaShop</span>
+            </a>
+            <nav class="main-nav">
+                <a href="https://40747.hosts2.ma-cloud.nl/landingspagina/productenpagina/producten.html">Products</a>
+                <a href="https://www.bol.com/nl/nl/l/manga/40615/?bltgh=0fac4a4b-5f70-40a9-822b-a4e626588866.ProductList_Top_quickCategories.40615.CategoryLink">Shop</a>
+                <a class="btn btn-secondary" href="mailto:40747@ma-web.nl">Contact</a>
+            </nav>
+        </div>
+    </header>
+
+    <div class="filters">
+        <button class="filter-btn" onclick="filterProducten('all', this)">All</button>
+        <button class="filter-btn" onclick="filterProducten('shonen', this)">Shonen</button>
+        <button class="filter-btn" onclick="filterProducten('shojo', this)">Shojo</button>
+        <button class="filter-btn" onclick="filterProducten('kodomo', this)">Kodomo</button>
+    </div>
+
+    <section id="filtered-container" class="filtered-results" hidden>
+        <h2 class="header">Filtered Results</h2>
+        <ul id="filtered-products" class="products"></ul>
+    </section>
+
+    <section class="producten">
+        <ul class="products">
+
+            <li class="product shojo">
+                <img class="product-img" src="img/asoaf.jpg" alt="asoaf"
+                    onclick="window.location.href='https://www.bol.com/nl/nl/p/a-sign-of-affection-1/9300000006548693/?referrer=socialshare_pdp_www'">
+                <div>Suu Morishita</div>
+                <h4>A Sign of Affection</h4>
+            </li>
+
+            <li class="product shojo">
+                <img class="product-img" src="img/ahr.jpg" alt="ahr"
+                    onclick="window.location.href='https://www.bol.com/nl/nl/p/ao-haru-ride-vol-1/9200000092440856/?referrer=socialshare_pdp_www'">
+                <div>Io Sakisaka</div>
+                <h4>Ao Haru Ride</h4>
+            </li>
+
+            <li class="product shonen">
+                <img class="product-img" src="img/aot.jpg" alt="aot"
+                    onclick="window.location.href='https://www.bol.com/nl/nl/p/attack-on-titan-1/1001004011836911/?referrer=socialshare_pdp_www'">
+                <div>Hajime Isayama</div>
+                <h4>Attack on Titan</h4>
+            </li>
+
+            <li class="product kodomo">
+                <img class="product-img" src="img/db.jpg" alt="db"
+                    onclick="window.location.href='https://www.bol.com/nl/nl/p/dragon-ball-vol-1/1001004001897710/?referrer=socialshare_pdp_www'">
+                <div>Akira Toriyama</div>
+                <h4>Dragon Ball</h4>
+            </li>
+        </ul>
+
+        <ul class="products">
+            <li class="product shonen">
+                <img class="product-img" src="img/fotns.jpg" alt="fotns"
+                    onclick="window.location.href='https://www.bol.com/nl/nl/p/fist-of-the-north-star-fist-of-the-north-star-vol-1/9300000015161008/?referrer=socialshare_pdp_www'">
+                <div>Tetsuo Hara</div>
+                <h4>Fist of the North Star</h4>
+            </li>
+
+            <li class="product shonen">
+                <img class="product-img" src="img/jjk.jpg" alt="jjk"
+                    onclick="window.location.href='https://www.bol.com/nl/nl/p/jujutsu-kaisen-vol-1/9200000108419051/?referrer=socialshare_pdp_www'">
+                <div>Gege Akutami</div>
+                <h4>Jujutsu Kaisen</h4>
+            </li>
+
+            <li class="product shonen">
+                <img class="product-img" src="img/kny.jpg" alt="kny"
+                    onclick="window.location.href='https://www.bol.com/nl/nl/p/demon-slayer-kimetsu-no-yaiba-vol-1/9200000085118800/?referrer=socialshare_pdp_www'">
+                <div>Koyoharu Gotouge</div>
+                <h4>Demon Slayer: Kimetsu no Yaiba</h4>
+            </li>
+
+            <li class="product kodomo">
+                <img class="product-img" src="img/mha.jpg" alt="mha"
+                    onclick="window.location.href='https://www.bol.com/nl/nl/p/my-hero-academia-vol-1/9200000040412758/?referrer=socialshare_pdp_www'">
+                <div>Kohei Horikoshi</div>
+                <h4>My Hero Academia</h4>
+            </li>
+        </ul>
+
+        <ul class="products">
+            <li class="product kodomo">
+                <img class="product-img" src="img/naruto.jpg" alt="naruto"
+                    onclick="window.location.href='https://www.bol.com/nl/nl/p/naruto-vol-1/1001004002157082/?referrer=socialshare_pdp_www'">
+                <div>Masashi Kishimoto</div>
+                <h4>Naruto</h4>
+            </li>
+
+            <li class="product kodomo">
+                <img class="product-img" src="img/op.jpg" alt="op"
+                    onclick="window.location.href='https://www.bol.com/nl/nl/p/one-piece-vol-1/1001004001897706/?referrer=socialshare_pdp_www'">
+                <div>Eiichiro Oda</div>
+                <h4>One Piece</h4>
+            </li>
+
+            <li class="product shojo ">
+                <img class="product-img" src="img/sxf.jpg" alt="sxf"
+                    onclick="window.location.href='https://www.bol.com/nl/nl/p/spy-x-family-vol-1/9200000122646572/?referrer=socialshare_pdp_www'">
+                <div>Tatsuya Endo</div>
+                <h4>Spy x Family</h4>
+            </li>
+
+            <li class="product shojo">
+                <img class="product-img" src="img/wha.jpg" alt="wha"
+                    onclick="window.location.href='https://www.bol.com/nl/nl/p/witch-hat-atelier-1/9200000096418489/?referrer=socialshare_pdp_www'">
+                <div>Kamome Shirahama</div>
+                <h4>Witch Hat Atelier</h4>
+            </li>
+        </ul>
+
+        <footer class="site-footer">
+            <p>Copyright © 2024 MangaShop. All rights reserved.</p>
+        </footer>
+
+    </section>
+</body>
+
+</html>
